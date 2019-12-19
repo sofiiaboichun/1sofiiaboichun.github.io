@@ -1,0 +1,22 @@
+<HTML>
+    <HEAD>
+    <meta charset="utf-8">
+    <title>Обробка значень із форми</title>
+    <script language="JavaScript">
+    function square (a, h){
+     var s=(a*h)/2;
+     document.write ("Площа прямокутного трикутника = ",s);
+     return s
+    }
+    </script>
+    </HEAD>
+    <BODY>
+    <P>Площа прямокутного трикутника</P>
+    <FORM name="form1">
+    Основа: <input type="text" size=5 name="param1"><br>
+    Висота: <input type="text" size=5 name="param2"><br>
+    <input type="button" value=Обчислити
+    onClick="square(document.form1.param1.value, document.form1.param2.value)">
+    </FORM>
+    </BODY>
+    </HTML> 
